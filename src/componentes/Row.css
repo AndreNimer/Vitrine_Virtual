@@ -1,0 +1,51 @@
+.row-container {
+    margin-top: 10%;
+    margin-left: 5px;
+    margin-bottom: 10%;
+    color: rgb(0, 0, 0);
+}
+
+.row-cards::-webkit-scrollbar {
+    display: none;
+    
+}
+
+.row-cards {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 0px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.Pecas-card {
+    object-fit: contain;
+    margin-top: 10px;
+    width:250px;
+    height:150px; 
+    text-decoration: none;
+}
+.borda{
+    text-align: left;
+    border:  3px inset black;
+    justify-content: center;
+    padding: 20px;
+    width: 300px;
+    max-height: 300px;
+    margin-left: 30px;
+}
+.bold{
+    font-weight: bold;
+}
+.textoconteudo{
+    font-weight: bold;
+    letter-spacing: 2px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+    color: #000000;
+    outline: none;
+    text-decoration: none;
+    object-fit: contain;
+    cursor: pointer;
+}
