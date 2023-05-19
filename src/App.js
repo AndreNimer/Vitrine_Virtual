@@ -2,6 +2,7 @@ import './App.css';
 import Menu from './componentes/Nav'
 import Footer from './componentes/Footer'
 import Row from "./componentes/Row"
+import Row2 from "./componentes/Row2"
 import { categories } from './Api';
 
 function App() {
@@ -12,6 +13,7 @@ function App() {
       {categories.map( (category) => {
         return <Row key={category.name} title={category.title} path={category.path} isLarge={category.isLarge}/>
       } )}
+      <Row2/>
       <Footer/>
     </div>
   );

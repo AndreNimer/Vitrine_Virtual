@@ -36,21 +36,21 @@ function Row({title, path, isLarge}) {
               {Pecas?.map((Pecas) => {
                   return (
                     <div className='borda'>
-                      <a href='#'className='textoconteudo'>
+                      <a href='./Row2'className='textoconteudo'>
                         <img
                             className={`Pecas-card` }
                             key={Pecas.id} 
                             src={Pecas.thumbnail} 
-                            alt={Pecas.name} >
+                            alt={Pecas.name}
+                        >
                         </img>
                         <p><span className='bold'>{truncate(Pecas?.title, 55 )}</span></p>
                         <p><span className='bold'>R$:</span> {Pecas.price}</p>
                         <p><span className='bold'>Descriçao:</span> {Pecas.description}</p>
                       </a>
                     </div>
-                    )
+                  )
               })}
-              
             </div>
         </div>
     )

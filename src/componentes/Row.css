@@ -14,9 +14,14 @@
     display: flex;
     overflow-y: hidden;
     overflow-x: scroll;
-    padding: 0px;
     width: 100%;
     box-sizing: border-box;
+    padding: 20px;
+}
+
+.row-header{
+    display: block;
+    justify-content: center;
 }
 
 .Pecas-card {
@@ -28,12 +33,20 @@
 }
 .borda{
     text-align: left;
-    border:  3px inset black;
+    box-shadow: 0px 0px 10px #000;
     justify-content: center;
     padding: 20px;
     width: 300px;
-    max-height: 300px;
+    height: 300px;
     margin-left: 30px;
+    transition: 0.3s;
+}
+.borda:hover{
+    .Pecas-card{
+        width:260px;
+    }
+    height: 310px;
+    padding-left: 30px;
 }
 .bold{
     font-weight: bold;
