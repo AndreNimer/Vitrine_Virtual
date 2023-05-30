@@ -1,4 +1,4 @@
-import React, {useEffect} from   'react'
+import React from   'react'
 import './Row2.css'
 
 function Row2() {

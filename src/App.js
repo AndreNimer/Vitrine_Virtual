@@ -9,12 +9,12 @@ function App() {
   
   return (
     <div className="App">
-      <Menu/>
+      <Menu />
       {categories.map( (category) => {
         return <Row key={category.name} title={category.title} path={category.path} isLarge={category.isLarge}/>
       } )}
-      <Row2/>
-      <Footer/>
+      <Row2 path ='/row2' component={Row2} />
+      <Footer />
     </div>
   );
 }
