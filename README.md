@@ -1,10 +1,10 @@
 # IMG do Site
 
 ## Produtos
-<img src="img1.png">
+<img src="./Assets/img1.png">
 
 ## Detalhe do Produto
-<img src="img2.png">
+<img src="./Assets/img2.png">
 
 # Getting Started with Create React App
 
