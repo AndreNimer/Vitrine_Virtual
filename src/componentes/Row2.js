@@ -22,7 +22,7 @@ function Row2() {
 
   return (
     <div className='Row2-container'>
-      <h1 className='Row2-header'>Detales do Produto</h1>
+      <h1 className='Row2-header'>Detalhes do Produto</h1>
       <div className='Row2-cards'>
         <div className='img-conteiner'>
           <img
