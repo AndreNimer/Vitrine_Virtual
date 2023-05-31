@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getPecas } from '../Api';
 import './Row.css';
-
+import { Link } from 'react-router-dom';
 function Row({ title, path}) {
     const [Pecas, setPecas] = useState([]);
 
@@ -9,6 +9,7 @@ function Row({ title, path}) {
         try {
             const data = await getPecas(_path);
             setPecas(data);
+            console.log(setPecas(data))
         } catch (error) {
             console.log('error Row: ', error);
         }
@@ -23,13 +24,13 @@ function Row({ title, path}) {
     };
 
     return (
-        <div className='row-container'>
-            <h1 className='row-header'>{title}</h1>
-            <div className='row-cards'>
+        <div className='Row-container'>
+            <h1 className='Row-header'>{title}</h1>
+            <div className='Row-cards'>
                 {Pecas?.map((Peca) => {
                     return (
                         <div className='borda' key={Peca.id}>
-                            <a href='/' className='textoconteudo'>
+                            <Link to={`/products/${Peca.id}`} className='textoconteudo'>
                                 <img
                                     className={`Pecas-card`}
                                     src={Peca.image}
@@ -41,13 +42,11 @@ function Row({ title, path}) {
                                 <p>
                                     <span className='bold'>R$:</span> {Peca.price}
                                 </p>
-                               
-                            </a> 
+                            </Link>
                         </div>
                     );
                 })}
             </div>
-            
         </div>
     );
 }

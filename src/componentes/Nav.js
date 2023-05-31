@@ -1,16 +1,17 @@
 import React from 'react'
 import './Nav.css'
+import { Link } from 'react-router-dom';
 
 function Nav () {
     return (
        
             <div className="nav-container">
                 <div className="logo">
-                    <a className="nav-logo" href='./' alt="Vitrine Virtual">Vitrine Virtual</a>
+                    <Link className="nav-logo" to='/' alt="Vitrine Virtual">Vitrine Virtual</Link>
                 </div>
                 <div className="nav-3"></div> 
-                <div className='produto'>
-                    <a className='texto' href='./' alt="produto">Produtos</a>   
+                <div className='home'>
+                    <Link className='texto' to='/' alt="home">Home</Link>   
                 </div>
             </div>
         

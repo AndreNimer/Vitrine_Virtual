@@ -4,7 +4,7 @@ export const categories = [
     {
         name: "Iphone",
         title: "Iphone",
-        path: "",
+        path: "/category/men's clothing",
         isLarge: false,
     },
     {
