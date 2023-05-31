@@ -1,7 +1,7 @@
 # IMG do Site
 
 ## Produtos
-<img src="Produtos.png">
+<img src="https://github.com/AndreNimer/Vitrine_Virtual/blob/main/src/Assets/Produtos.png">
 
 ## Detalhe do Produto
 <img src="https://github.com/AndreNimer/Vitrine_Virtual/blob/main/src/Assets/Detalhe%20do%20Produto.png">
