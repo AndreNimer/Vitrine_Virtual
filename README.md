@@ -4,7 +4,7 @@
 <img src="Produtos.png">
 
 ## Detalhe do Produto
-<img src="Detalhe.png">
+<img src="https://github.com/AndreNimer/Vitrine_Virtual/blob/main/src/Assets/Detalhe%20do%20Produto.png">
 
 # Getting Started with Create React App
 
